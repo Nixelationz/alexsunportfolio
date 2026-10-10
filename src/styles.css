@@ -160,6 +160,20 @@ pre code {
   margin-inline: auto;
 }
 
+.site-logo-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 0.15rem 0.2rem;
+  text-decoration: none;
+}
+
+.site-logo {
+  display: block;
+  width: clamp(9rem, 22vw, 14rem);
+  height: auto;
+}
+
 .display-title {
   font-family: "Fraunces", Georgia, serif;
 }
@@ -461,4 +475,3 @@ a {
     transform: translateY(0);
   }
 }
-

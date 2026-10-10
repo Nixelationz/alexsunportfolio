@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 130" role="img" aria-labelledby="title desc">
+  <title id="title">Alex Sun</title>
+  <desc id="desc">Pixel art logo spelling Alex Sun with cyan block accents.</desc>
+  <defs>
+    <style>
+      .letter { fill: #2d2ee7; }
+      .accent { fill: #10abc1; }
+    </style>
+  </defs>
+
+  <g shape-rendering="crispEdges">
+    <path class="accent" d="M220 0h120v50H220V40h-10V30h-10V20h-10V10h30z" />
+    <path class="accent" d="M0 70h180v10h10v10h10v10h-10v10h-10v10H0z" />
+
+    <path class="letter" d="M0 10h40v10h10v60H30V50H20v30H0V20h10V10zm20 20v10h10V30z" />
+    <path class="letter" d="M60 10h20v50h40v20H60z" />
+    <path class="letter" d="M130 10h50v20h-30v10h30v10h-30v10h30v20h-50z" />
+    <path class="letter" d="M190 10h20v10h10v10h10V20h10V10h20v20h-10v10h-10v10h10v10h10v20h-20V70h-10V60h-10v10h-10v10h-20V60h10V50h10V40h-10V30h-10z" />
+
+    <path class="letter" d="M200 70h50v20h-30v10h30v10h-10v10h-40v-20h30V90h-30z" />
+    <path class="letter" d="M260 70h20v40h20V70h20v50h-10v10h-40v-10h-10z" />
+    <path class="letter" d="M330 70h20v10h10v10h10V70h20v60h-20v-20h-10v-10h-10v30h-20z" transform="translate(-50 0)" />
+  </g>
+</svg>

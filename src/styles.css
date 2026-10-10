@@ -8,70 +8,97 @@
 }
 
 :root {
-  --sea-ink: #173a40;
-  --sea-ink-soft: #416166;
-  --lagoon: #4fb8b2;
-  --lagoon-deep: #328f97;
-  --palm: #2f6a4a;
-  --sand: #e7f0e8;
-  --foam: #f3faf5;
-  --surface: rgba(255, 255, 255, 0.74);
-  --surface-strong: rgba(255, 255, 255, 0.9);
-  --line: rgba(23, 58, 64, 0.14);
-  --inset-glint: rgba(255, 255, 255, 0.82);
-  --kicker: rgba(47, 106, 74, 0.9);
-  --bg-base: #e7f3ec;
-  --header-bg: rgba(251, 255, 248, 0.84);
-  --chip-bg: rgba(255, 255, 255, 0.8);
-  --chip-line: rgba(47, 106, 74, 0.18);
-  --link-bg-hover: rgba(255, 255, 255, 0.9);
-  --hero-a: rgba(79, 184, 178, 0.36);
-  --hero-b: rgba(47, 106, 74, 0.2);
+  --blue-1: #dfeeff;
+  --blue-2: #cfe3ff;
+  --blue-3: #a9d1ff;
+  --blue-4: #80b8ff;
+  --blue-5: #4d94ff;
+  --blue-6: #1c6ceb;
+  --blue-7: #0060ff;
+
+  --sea-ink: var(--blue-1);
+  --sea-ink-soft: var(--blue-2);
+  --lagoon: var(--blue-3);
+  --lagoon-deep: var(--blue-4);
+  --palm: var(--blue-5);
+  --sand: var(--blue-6);
+  --foam: var(--blue-7);
+
+  --surface: rgba(17, 28, 52, 0.72);
+  --surface-strong: rgba(16, 26, 48, 0.9);
+  --line: rgba(223, 238, 255, 0.2);
+  --inset-glint: rgba(255, 255, 255, 0.12);
+  --kicker: rgba(173, 211, 255, 0.9);
+  --bg-base: #000040;
+  --header-bg: rgba(10, 20, 38, 0.8);
+  --chip-bg: rgba(15, 24, 44, 0.9);
+  --chip-line: rgba(173, 211, 255, 0.26);
+  --link-bg-hover: rgba(22, 35, 60, 0.9);
+  --hero-a: rgba(128, 184, 255, 0.26);
+  --hero-b: rgba(77, 148, 255, 0.18);
 }
 
 :root[data-theme="dark"] {
-  --sea-ink: #d7ece8;
-  --sea-ink-soft: #afcdc8;
-  --lagoon: #60d7cf;
-  --lagoon-deep: #8de5db;
-  --palm: #6ec89a;
-  --sand: #0f1a1e;
-  --foam: #101d22;
-  --surface: rgba(16, 30, 34, 0.8);
-  --surface-strong: rgba(15, 27, 31, 0.92);
-  --line: rgba(141, 229, 219, 0.18);
-  --inset-glint: rgba(194, 247, 238, 0.14);
-  --kicker: #b8efe5;
-  --bg-base: #0a1418;
-  --header-bg: rgba(10, 20, 24, 0.8);
-  --chip-bg: rgba(13, 28, 32, 0.9);
-  --chip-line: rgba(141, 229, 219, 0.24);
-  --link-bg-hover: rgba(24, 44, 49, 0.8);
-  --hero-a: rgba(96, 215, 207, 0.18);
-  --hero-b: rgba(110, 200, 154, 0.12);
+  --blue-1: #dfeeff;
+  --blue-2: #cfe3ff;
+  --blue-3: #a9d1ff;
+  --blue-4: #80b8ff;
+  --blue-5: #4d94ff;
+  --blue-6: #1c6ceb;
+  --blue-7: #0060ff;
+
+  --sea-ink: var(--blue-1);
+  --sea-ink-soft: var(--blue-2);
+  --lagoon: var(--blue-3);
+  --lagoon-deep: var(--blue-4);
+  --palm: var(--blue-5);
+  --sand: var(--blue-6);
+  --foam: var(--blue-7);
+
+  --surface: rgba(17, 28, 52, 0.8);
+  --surface-strong: rgba(16, 26, 48, 0.92);
+  --line: rgba(223, 238, 255, 0.18);
+  --inset-glint: rgba(255, 255, 255, 0.12);
+  --kicker: #dfeeff;
+  --bg-base: #000040;
+  --header-bg: rgba(10, 20, 38, 0.8);
+  --chip-bg: rgba(15, 24, 44, 0.9);
+  --chip-line: rgba(169, 209, 255, 0.22);
+  --link-bg-hover: rgba(22, 35, 60, 0.9);
+  --hero-a: rgba(128, 184, 255, 0.18);
+  --hero-b: rgba(77, 148, 255, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --sea-ink: #d7ece8;
-    --sea-ink-soft: #afcdc8;
-    --lagoon: #60d7cf;
-    --lagoon-deep: #8de5db;
-    --palm: #6ec89a;
-    --sand: #0f1a1e;
-    --foam: #101d22;
-    --surface: rgba(16, 30, 34, 0.8);
-    --surface-strong: rgba(15, 27, 31, 0.92);
-    --line: rgba(141, 229, 219, 0.18);
-    --inset-glint: rgba(194, 247, 238, 0.14);
-    --kicker: #b8efe5;
-    --bg-base: #0a1418;
-    --header-bg: rgba(10, 20, 24, 0.8);
-    --chip-bg: rgba(13, 28, 32, 0.9);
-    --chip-line: rgba(141, 229, 219, 0.24);
-    --link-bg-hover: rgba(24, 44, 49, 0.8);
-    --hero-a: rgba(96, 215, 207, 0.18);
-    --hero-b: rgba(110, 200, 154, 0.12);
+    --blue-1: #dfeeff;
+    --blue-2: #cfe3ff;
+    --blue-3: #a9d1ff;
+    --blue-4: #80b8ff;
+    --blue-5: #4d94ff;
+    --blue-6: #1c6ceb;
+    --blue-7: #0060ff;
+
+    --sea-ink: var(--blue-1);
+    --sea-ink-soft: var(--blue-2);
+    --lagoon: var(--blue-3);
+    --lagoon-deep: var(--blue-4);
+    --palm: var(--blue-5);
+    --sand: var(--blue-6);
+    --foam: var(--blue-7);
+
+    --surface: rgba(17, 28, 52, 0.8);
+    --surface-strong: rgba(16, 26, 48, 0.92);
+    --line: rgba(223, 238, 255, 0.18);
+    --inset-glint: rgba(255, 255, 255, 0.12);
+    --kicker: #dfeeff;
+    --bg-base: #000040;
+    --header-bg: rgba(10, 20, 38, 0.8);
+    --chip-bg: rgba(15, 24, 44, 0.9);
+    --chip-line: rgba(169, 209, 255, 0.22);
+    --link-bg-hover: rgba(22, 35, 60, 0.9);
+    --hero-a: rgba(128, 184, 255, 0.18);
+    --hero-b: rgba(77, 148, 255, 0.12);
   }
 }
 

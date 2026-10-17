@@ -1,23 +1,3 @@
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/about')({
-  component: About,
-})
-
-function About() {
-  return (
-    <main className="page-wrap px-4 py-12">
-      <section className="island-shell rounded-2xl p-6 sm:p-8">
-        <p className="island-kicker mb-2">About</p>
-        <h1 className="display-title mb-3 text-4xl font-bold text-[var(--sea-ink)] sm:text-5xl">
-          A small starter with room to grow.
-        </h1>
-        <p className="m-0 max-w-3xl text-base leading-8 text-[var(--sea-ink-soft)]">
-          TanStack Start gives you type-safe routing, server functions, and
-          modern SSR defaults. Use this as a clean foundation, then layer in
-          your own routes, styling, and add-ons.
-        </p>
-      </section>
-    </main>
-  )
-}
+import { createFileRoute, Link } from '@tanstack/react-router'
+export const Route=createFileRoute('/about')({component:About,head:()=>({meta:[{title:'About Me | Alex Sun'}]})})
+function About(){return <main className="wrap inner"><p className="eyebrow">A little introduction</p><h1>About me<span className="cyan">.</span></h1><div className="about-layout"><div className="identity"><img src="/alex-sun-logo.svg" alt="Alex Sun pixel logo"/><span>Curiosity → Creation</span></div><div className="prose"><h2>Hi, I'm Alex.</h2><p>I'm interested in how things work, how they look, and how they can work better. I enjoy turning a rough idea into something tangible, whether that's a website, a useful tool, or a small creative experiment.</p><p>My approach is simple: start with a question, make something, and keep improving it. I value clear design, thoughtful details, and the things you learn by doing.</p><p>Outside of projects, I'm usually discovering something new, collecting ideas, or following a particularly interesting rabbit hole.</p><Link className="text-link" to="/portfolio">See what I'm working on ↗</Link></div></div><section className="section"><p className="eyebrow">What I bring</p><h2>A mix of interests.</h2><div className="interests">{[['Development','Building responsive websites and small tools with approachable interfaces.'],['Design','Exploring typography, layout, and the details that make a digital experience feel right.'],['Learning','Trying new approaches, asking better questions, and sharing what I discover.']].map(([title,copy],i)=><article key={title}><span className="eyebrow">0{i+1}</span><h3>{title}</h3><p>{copy}</p></article>)}</div></section></main>}

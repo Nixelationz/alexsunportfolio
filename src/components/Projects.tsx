@@ -1,0 +1,10 @@
+import { useState } from 'react'
+const projects = [
+ {title:'Personal Portfolio',category:'Web',description:'A personal home for projects, ideas, and a little bit of personality.',detail:'A responsive portfolio concept with clear navigation, readable content, and a custom pixel identity. Built with React and TypeScript.',image:'photo-1498050108023-c5249f4df085',alt:'Laptop and workspace'},
+ {title:'Everyday Planner',category:'Tools',description:'A calmer way to organize the day and make room for what matters.',detail:'A sample productivity concept exploring daily priorities and task organization. The focus is on making the next action easy to find.',image:'photo-1455390582262-044cdead277a',alt:'Notebook and pen on a desk'},
+ {title:'Pixel Playground',category:'Experiments',description:'An exploration of color, simple shapes, and interactive possibilities.',detail:'A sample creative coding concept inspired by retro graphics, exploring how small visual building blocks create expressive patterns.',image:'photo-1550745165-9bc0b252726f',alt:'Retro arcade machines'},
+]
+export function ProjectList({limit,category='All'}:{limit?:number;category?:string}) {
+ return <div className="project-grid">{projects.filter(p=>category==='All'||p.category===category).slice(0,limit).map(p=><article className="project" key={p.title}><div className="project-image"><img src={`https://images.unsplash.com/${p.image}?auto=format&fit=crop&w=1000&q=85`} alt={p.alt} loading="lazy"/><span>{p.category}</span></div><p className="project-meta">Sample project / 2026</p><h3>{p.title}</h3><p>{p.description}</p><details><summary>Project details <span aria-hidden="true">+</span></summary><p>{p.detail}</p></details></article>)}</div>
+}
+export function ProjectBrowser(){const [category,setCategory]=useState('All');return <><div className="filters" role="group" aria-label="Filter projects">{['All','Web','Tools','Experiments'].map(c=><button key={c} type="button" aria-pressed={c===category} onClick={()=>setCategory(c)}>{c}</button>)}</div><ProjectList category={category}/></>}

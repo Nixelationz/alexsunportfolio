@@ -4,7 +4,7 @@
 
 @theme { --font-sans: "VT323", monospace; }
 :root { font-family: "VT323", monospace; color: #00c9fa; background: #020024; color-scheme: dark; font-synthesis: none; }
-* { box-sizing: border-box; letter-spacing: 0; }
+* { box-sizing: border-box; letter-spacing: 0; text-transform: uppercase; }
 html { scroll-behavior: smooth; scroll-padding-top: 105px; }
 body { margin: 0; background: linear-gradient(180deg,#030029 0,#02001b 38%,#08004c 70%,#1710df 100%); }
 a { color: inherit; text-decoration: none; text-underline-offset: 6px; }
@@ -33,7 +33,10 @@ h1,h2,h3,p { margin-top: 0; font-weight: 400; }
 .supplied-artwork { border: 0; background: transparent; }
 .supplied-artwork::before { display: none; }
 .supplied-artwork img { width: 100%; height: 100%; object-fit: contain; }
-.project-screenshot { width: 100%; aspect-ratio: 1.57; object-fit: contain; margin-bottom: 20px; background: #10103f; }
+.project-image { position: relative; aspect-ratio: 1.57; margin: 0 0 20px; overflow: hidden; background: #10103f; }
+.project-screenshot { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.project-image-caption { position: absolute; inset: auto 0 0; padding: 10px 14px; background: #030029df; color: #fff; font-size: 20px; text-align: center; }
+.project-image-caption a { text-decoration: underline; text-underline-offset: 3px; }
 .history-supplied { width: 100%; object-fit: contain; }
 .hero-avatar { width: 100%; min-width: 0; }
 .home-hero h1 { position: absolute; z-index: 2; bottom: 66px; left: 22%; margin: 0; font-size: 136px; color: #1717ff; text-shadow: 4px 4px #020020; line-height: 0.9; white-space: nowrap; pointer-events: none; }

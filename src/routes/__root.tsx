@@ -11,7 +11,10 @@ export const Route = createRootRoute({
       { title: 'Alex Sun | Portfolio' },
       { name: 'theme-color', content: '#030029' },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      { rel: 'stylesheet', href: appCss },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+    ],
   }),
   shellComponent: RootDocument,
 })

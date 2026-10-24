@@ -30,7 +30,7 @@ function About() {
         <div className="avatar-years" aria-hidden="true">{['2017', '2019', '2022', '2024', '2026'].map((year, i) => <div className="year-avatar" key={year} style={{ '--avatar-color': ['#00bde8', '#597aff', '#ce8df5', '#54dbbe', '#1414ff'][i] } as React.CSSProperties}><div className="block-avatar"><i /><b /><span /><em /></div><small>{year}</small></div>)}</div>
         <span className="artwork-caption">YEARLY AVATAR ARTWORK COMING SOON</span>
       </div>}
-      <div className="speech-panel history-copy"><p>I have been playing Roblox since April 29th, 2017 (as a guest) and created my account on August 3rd, 2017.</p></div>
+      <div className="speech-panel history-copy"><p>I have been playing Roblox since <strong>April 29th, 2017</strong> (as a guest) and created my account on <strong>August 3rd, 2017</strong>.</p></div>
     </section>
   </main>
 }

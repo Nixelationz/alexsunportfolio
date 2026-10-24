@@ -7,11 +7,19 @@ export const profile = {
   alternateArtworkUrl: null as string | null,
   historyArtworkUrl: null as string | null,
   socials: [
-    { name: 'linkedin', icon: 'linkedin', url: 'https://www.linkedin.com/in/actiumsolar/' },
-    { name: 'roblox', icon: 'roblox', url: null },
-    { name: 'github', icon: 'github', url: null },
+    {
+      name: "LinkedIn",
+      icon: "linkedin",
+      url: "https://www.linkedin.com/in/actiumsolar/",
+    },
+    {
+      name: "Roblox",
+      icon: "roblox",
+      url: "https://www.roblox.com/users/358760590/profile",
+    },
+    { name: "GitHub", icon: "github", url: "https://github.com/Nixelationz" },
   ],
-}
+};
 
 export const projects = [
   {

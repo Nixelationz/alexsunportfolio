@@ -1,3 +1,36 @@
-import { createFileRoute, Link } from '@tanstack/react-router'
-export const Route=createFileRoute('/about')({component:About,head:()=>({meta:[{title:'About Me | Alex Sun'}]})})
-function About(){return <main className="wrap inner"><p className="eyebrow">A little introduction</p><h1>About me<span className="cyan">.</span></h1><div className="about-layout"><div className="identity"><img src="/alex-sun-logo.svg" alt="Alex Sun pixel logo"/><span>Curiosity → Creation</span></div><div className="prose"><h2>Hi, I'm Alex.</h2><p>I'm interested in how things work, how they look, and how they can work better. I enjoy turning a rough idea into something tangible, whether that's a website, a useful tool, or a small creative experiment.</p><p>My approach is simple: start with a question, make something, and keep improving it. I value clear design, thoughtful details, and the things you learn by doing.</p><p>Outside of projects, I'm usually discovering something new, collecting ideas, or following a particularly interesting rabbit hole.</p><Link className="text-link" to="/portfolio">See what I'm working on ↗</Link></div></div><section className="section"><p className="eyebrow">What I bring</p><h2>A mix of interests.</h2><div className="interests">{[['Development','Building responsive websites and small tools with approachable interfaces.'],['Design','Exploring typography, layout, and the details that make a digital experience feel right.'],['Learning','Trying new approaches, asking better questions, and sharing what I discover.']].map(([title,copy],i)=><article key={title}><span className="eyebrow">0{i+1}</span><h3>{title}</h3><p>{copy}</p></article>)}</div></section></main>}
+import { createFileRoute } from '@tanstack/react-router'
+import Artwork from '../components/Artwork'
+import { profile } from '../content'
+
+export const Route = createFileRoute('/about')({
+  component: About,
+  head: () => ({ meta: [{ title: 'About Me | Alex Sun' }] }),
+})
+
+function About() {
+  return <main id="main" className="wrap about-page">
+    <h1 className="sr-only">About Alexander Sun</h1>
+    <section className="bio-section" aria-label="Introduction">
+      <Artwork />
+      <div className="speech-panel">
+        <p>My name is Alexander Sun.</p>
+        <p>I am currently a <span className="blank-detail">{profile.role || '[role]'}</span> at <span className="blank-detail">{profile.university || '[university]'}</span> and I am based in the <strong>Los Angeles area</strong>!</p>
+      </div>
+    </section>
+    <section className="bio-section reverse" aria-label="Interests">
+      <Artwork variant="alternate" />
+      <div className="speech-panel">
+        <p>I am interested in <strong>Roblox</strong>, <strong>computers</strong>, <strong>data science</strong>, <strong>AI</strong>, and <strong>mathematics</strong>!</p>
+        <p>I hope I can get a job in the tech industry!</p>
+      </div>
+    </section>
+    <section className="history-section" aria-labelledby="history-title">
+      <div className="history-heading"><h2 id="history-title">MY ROBLOX STORY</h2><span>2017 — 2026</span></div>
+      {profile.historyArtworkUrl ? <img className="history-supplied" src={profile.historyArtworkUrl} alt="My yearly Roblox avatars fighting, 2017 to 2026" /> : <div className="history-artwork" role="img" aria-label="Placeholder for yearly Roblox avatars fighting, 2017 to 2026">
+        <div className="avatar-years" aria-hidden="true">{['2017', '2019', '2022', '2024', '2026'].map((year, i) => <div className="year-avatar" key={year} style={{ '--avatar-color': ['#00bde8', '#597aff', '#ce8df5', '#54dbbe', '#1414ff'][i] } as React.CSSProperties}><div className="block-avatar"><i /><b /><span /><em /></div><small>{year}</small></div>)}</div>
+        <span className="artwork-caption">YEARLY AVATAR ARTWORK COMING SOON</span>
+      </div>}
+      <div className="speech-panel history-copy"><p>I have been playing Roblox since April 29th, 2017 (as a guest) and created my account on August 3rd, 2017.</p></div>
+    </section>
+  </main>
+}

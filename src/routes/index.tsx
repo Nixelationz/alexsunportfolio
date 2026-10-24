@@ -1,4 +1,28 @@
-import { createFileRoute, Link } from '@tanstack/react-router'
-import { ProjectList } from '../components/Projects'
-export const Route=createFileRoute('/')({component:Home,head:()=>({meta:[{title:'Alex Sun | Portfolio'}]})})
-function Home(){return <main><section className="hero wrap"><p className="eyebrow"><span className="dot"/> A personal corner of the internet</p><h1>Alex Sun<span className="cyan">.</span></h1><div className="hero-bottom"><p>I build digital things.<br/>Curious by nature, creative by practice.</p><Link className="primary" to="/portfolio">Explore my projects ↗</Link></div><div className="strip"><span>Code</span><span>Design</span><span>Experimentation</span><span>Always a work in progress.</span></div></section><section className="wrap section"><div className="section-heading"><div><p className="eyebrow">01 / Selected work</p><h2>A few things I've made.</h2></div><Link className="text-link" to="/portfolio">All projects ↗</Link></div><ProjectList limit={2}/></section><section className="about-band"><div className="wrap teaser"><p className="eyebrow">02 / Behind the screen</p><div><h2>Good questions.<br/>Thoughtful solutions.</h2><p>I'm Alex, a maker who enjoys exploring the space between technology and creativity. This is where I collect my projects, experiments, and everything I learn along the way.</p><Link className="text-link" to="/about">A little more about me ↗</Link></div></div></section></main>}
+import { createFileRoute } from '@tanstack/react-router'
+import { lazy, Suspense } from 'react'
+import Artwork from '../components/Artwork'
+import { profile } from '../content'
+import PixelIcon from '../components/PixelIcon'
+
+const AvatarScene = lazy(() => import('../components/AvatarScene'))
+export const Route = createFileRoute('/')({
+  component: Home,
+  head: () => ({ meta: [{ title: 'Alex Sun | Home' }, { name: 'description', content: 'Alexander Sun: Roblox, computers, data science, AI, and mathematics.' }] }),
+})
+
+function Home() {
+  return <main id="main">
+    <section className="home-hero wrap" aria-labelledby="home-title">
+      <Artwork className="hero-artwork" />
+      <div className="hero-avatar"><Suspense fallback={<p className="loading">Loading character...</p>}><AvatarScene /></Suspense></div>
+      <h1 id="home-title">ALEX SUN</h1>
+      <a className="scroll-cue" href="#socials" aria-label="Scroll to social links">↓</a>
+    </section>
+    <section id="socials" className="social-section wrap" aria-label="Find me online">
+      {profile.socials.map(social => <div className="social-row" key={social.name}>
+        <PixelIcon name={social.icon} />
+        {social.url ? <a href={social.url} target="_blank" rel="noreferrer">My {social.name}<span aria-hidden="true"> ↗</span></a> : <span className="social-pending">My {social.name}<small>LINK COMING SOON</small></span>}
+      </div>)}
+    </section>
+  </main>
+}

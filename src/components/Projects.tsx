@@ -1,10 +1,14 @@
-import { useState } from 'react'
-const projects = [
- {title:'Personal Portfolio',category:'Web',description:'A personal home for projects, ideas, and a little bit of personality.',detail:'A responsive portfolio concept with clear navigation, readable content, and a custom pixel identity. Built with React and TypeScript.',image:'photo-1498050108023-c5249f4df085',alt:'Laptop and workspace'},
- {title:'Everyday Planner',category:'Tools',description:'A calmer way to organize the day and make room for what matters.',detail:'A sample productivity concept exploring daily priorities and task organization. The focus is on making the next action easy to find.',image:'photo-1455390582262-044cdead277a',alt:'Notebook and pen on a desk'},
- {title:'Pixel Playground',category:'Experiments',description:'An exploration of color, simple shapes, and interactive possibilities.',detail:'A sample creative coding concept inspired by retro graphics, exploring how small visual building blocks create expressive patterns.',image:'photo-1550745165-9bc0b252726f',alt:'Retro arcade machines'},
-]
-export function ProjectList({limit,category='All'}:{limit?:number;category?:string}) {
- return <div className="project-grid">{projects.filter(p=>category==='All'||p.category===category).slice(0,limit).map(p=><article className="project" key={p.title}><div className="project-image"><img src={`https://images.unsplash.com/${p.image}?auto=format&fit=crop&w=1000&q=85`} alt={p.alt} loading="lazy"/><span>{p.category}</span></div><p className="project-meta">Sample project / 2026</p><h3>{p.title}</h3><p>{p.description}</p><details><summary>Project details <span aria-hidden="true">+</span></summary><p>{p.detail}</p></details></article>)}</div>
+import { projects } from '../content'
+
+export function ProjectList() {
+  return <div className="project-grid">{projects.map(project => <article className="project" key={project.title}>
+    {project.imageUrl ? <img className="project-screenshot" src={project.imageUrl} alt={project.title + ' screenshot'} /> : <div className={'project-placeholder ' + project.art} role="img" aria-label={'Screenshot placeholder for ' + project.title}>
+      {project.art === 'tower-art' ? <div className="tower-blocks" aria-hidden="true">{Array.from({ length: 7 }, (_, i) => <span key={i} style={{ height: (45 + i * 19) + 'px' }} />)}</div> : <div className="pangram-letters" aria-hidden="true"><span>A</span><span>a</span><span>Z</span></div>}
+      <span className="artwork-caption">SCREENSHOT COMING SOON</span>
+    </div>}
+    <h2>{project.title}</h2><p className="project-date">Started <time dateTime={project.date}>{project.dateLabel}</time></p>
+    {project.wip && <span className="wip">WIP</span>}
+    <p className="project-description">{project.description}</p>
+    {project.url && <a className="pixel-link" href={project.url} target="_blank" rel="noreferrer">OPEN PROJECT ↗</a>}
+  </article>)}</div>
 }
-export function ProjectBrowser(){const [category,setCategory]=useState('All');return <><div className="filters" role="group" aria-label="Filter projects">{['All','Web','Tools','Experiments'].map(c=><button key={c} type="button" aria-pressed={c===category} onClick={()=>setCategory(c)}>{c}</button>)}</div><ProjectList category={category}/></>}

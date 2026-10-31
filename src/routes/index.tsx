@@ -3,9 +3,11 @@ import { lazy, Suspense } from 'react'
 import Artwork from '../components/Artwork'
 import { profile } from '../content'
 import PixelIcon from '../components/PixelIcon'
+import { incrementHomepageVisits } from '../server/visits'
 
 const AvatarScene = lazy(() => import('../components/AvatarScene'))
 export const Route = createFileRoute('/')({
+  loader: () => incrementHomepageVisits(),
   component: Home,
   head: () => ({ meta: [{ title: 'Alex Sun | Home' }, { name: 'description', content: 'Alexander Sun: Roblox, computers, data science, AI, and mathematics.' }] }),
 })

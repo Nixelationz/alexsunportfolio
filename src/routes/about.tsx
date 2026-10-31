@@ -13,7 +13,7 @@ function About() {
     <section className="bio-section" aria-label="Introduction">
       <Artwork />
       <div className="speech-panel">
-        <p>My name is Alexander Sun.</p>
+        <p>My name is <strong>Alexander Sun</strong>.</p>
         <p>I am currently a <span className="blank-detail">{profile.role || '[role]'}</span> at <span className="blank-detail">{profile.university || '[university]'}</span> and I am based in the <strong>Los Angeles area</strong>!</p>
       </div>
     </section>

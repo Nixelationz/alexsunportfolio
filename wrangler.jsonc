@@ -19,6 +19,14 @@
 			"pattern": "alexsun.xyz",
 			"custom_domain": true
 		}
+	],
+	"d1_databases": [
+		{
+			"binding": "VISITS_DB",
+			"database_name": "alexsunportfolio-visits",
+			"database_id": "2438fff5-28bf-4f5f-b007-a9d75fecc9f5",
+			"migrations_dir": "migrations"
+		}
 	]
 	/**
 	 * Smart Placement

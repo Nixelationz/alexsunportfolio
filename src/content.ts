@@ -2,7 +2,7 @@
 export const profile = {
   role: null as string | null,
   university: null as string | null,
-  resumeUrl: null as string | null,
+  resumeUrl: '/A.%20Sun.pdf' as string | null,
   artworkUrl: null as string | null,
   alternateArtworkUrl: null as string | null,
   historyArtworkUrl: null as string | null,
@@ -48,6 +48,6 @@ export const projects = [
     imageCaptionLink: null as string | null,
     imageCaptionUrl: null as string | null,
     wip: true,
-    url: null as string | null,
+    url: 'https://pangram.alexsun.xyz/',
   },
 ]

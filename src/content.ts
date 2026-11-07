@@ -1,10 +1,13 @@
+import firstArtworkUrl from '../About_Me_1.png?url'
+import secondArtworkUrl from '../About_Me_2.png?url'
+
 // Replace null values when the corresponding profile details and assets are ready.
 export const profile = {
   role: null as string | null,
   university: null as string | null,
   resumeUrl: '/A.%20Sun.pdf' as string | null,
-  artworkUrl: null as string | null,
-  alternateArtworkUrl: null as string | null,
+  artworkUrl: firstArtworkUrl,
+  alternateArtworkUrl: secondArtworkUrl,
   historyArtworkUrl: null as string | null,
   socials: [
     {

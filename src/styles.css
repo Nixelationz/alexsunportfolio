@@ -14,7 +14,7 @@ button,a { -webkit-tap-highlight-color: transparent; }
 a:focus-visible,button:focus-visible { outline: 3px dashed #fff; outline-offset: 8px; }
 img { max-width: 100%; display: block; image-rendering: pixelated; }
 .wrap { width: min(1280px,calc(100% - 80px)); margin-inline: auto; }
-.site-header { position: sticky; top: 0; z-index: 20; background: #030029f5; }
+.site-header { position: sticky; top: 0; z-index: 20; background: #000080; }
 nav { display: flex; align-items: center; gap: 52px; min-height: 96px; }
 nav a { font-size: calc(30px * var(--font-scale)); line-height: 1; padding-block: 14px; }
 nav .active { text-decoration: underline; text-decoration-thickness: 3px; }
@@ -50,6 +50,11 @@ h1,h2,h3,p { margin-top: 0; font-weight: 400; }
 .pixel-icon { color: #00c9fa; display: grid; grid-template-columns: repeat(12,1fr); grid-template-rows: repeat(12,1fr); width: 58px; height: 58px; flex: 0 0 58px; }
 .pixel-icon i { display: block; }
 .bio-section { display: grid; grid-template-columns: 0.85fr 1.3fr; gap: 50px; align-items: center; min-height: 640px; padding-block: 68px; }
+.about-page .bio-section:first-of-type { grid-template-columns: 1.2fr 1fr; }
+.about-page .bio-section:first-of-type .supplied-artwork { aspect-ratio: 1394 / 1014; overflow: visible; }
+.about-page .bio-section:first-of-type .supplied-artwork img { height: auto; -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent 100%); mask-image: linear-gradient(to bottom, #000 60%, transparent 100%); }
+.about-page .bio-section.reverse .supplied-artwork { aspect-ratio: 1379 / 1080; overflow: visible; }
+.about-page .bio-section.reverse .supplied-artwork img { height: auto; -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent 100%); mask-image: linear-gradient(to bottom, #000 60%, transparent 100%); }
 .speech-panel { background: #f6f6fa; color: #10101a; padding: 34px; font-size: calc(38px * var(--font-scale)); line-height: 1.2; border: 8px solid #1c11ff; clip-path: polygon(8px 0,calc(100% - 8px) 0,calc(100% - 8px) 8px,100% 8px,100% calc(100% - 8px),calc(100% - 8px) calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,8px calc(100% - 8px),0 calc(100% - 8px),0 8px,8px 8px); }
 .speech-panel p { margin-bottom: 20px; }
 .speech-panel p:last-child { margin-bottom: 0; }

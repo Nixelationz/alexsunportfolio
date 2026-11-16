@@ -1,0 +1,456 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="2965" viewBox="0 0 630 2965">
+<style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .label { font-size: 11px; } .power { font-size: 10px; font-weight: 600; }</style>
+<rect width="100%" height="100%" fill="#f7f8fa"/>
+<text x="100" y="28" font-size="20" font-weight="700">Perfect-Power Gaps 1-100</text>
+<text x="100" y="50" font-size="12" fill="#59636e">Vertical semi-log heat map: color = log10(perfect-power value)</text>
+<text x="225" y="75" text-anchor="middle" font-size="13" font-weight="700">a^b (upper)</text>
+<text x="475" y="75" text-anchor="middle" font-size="13" font-weight="700">c^d (lower)</text>
+<text x="88" y="108" text-anchor="end" class="label">100</text>
+<rect x="100" y="90" width="250" height="28" fill="#862373" stroke="#ffffff"/>
+<text x="225.0" y="109.0" text-anchor="middle" class="power" fill="#17151f">5^5</text>
+<rect x="350" y="90" width="250" height="28" fill="#852373" stroke="#ffffff"/>
+<text x="475.0" y="109.0" text-anchor="middle" class="power" fill="#17151f">55^2</text>
+<text x="88" y="136" text-anchor="end" class="label">99</text>
+<rect x="100" y="118" width="250" height="28" fill="#812173" stroke="#ffffff"/>
+<text x="225.0" y="137.0" text-anchor="middle" class="power" fill="#17151f">50^2</text>
+<rect x="350" y="118" width="250" height="28" fill="#802172" stroke="#ffffff"/>
+<text x="475.0" y="137.0" text-anchor="middle" class="power" fill="#17151f">7^4</text>
+<text x="88" y="164" text-anchor="end" class="label">98</text>
+<rect x="100" y="146" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="146" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="192" text-anchor="end" class="label">97</text>
+<rect x="100" y="174" width="250" height="28" fill="#802172" stroke="#ffffff"/>
+<text x="225.0" y="193.0" text-anchor="middle" class="power" fill="#17151f">7^4</text>
+<rect x="350" y="174" width="250" height="28" fill="#7f2072" stroke="#ffffff"/>
+<text x="475.0" y="193.0" text-anchor="middle" class="power" fill="#17151f">48^2</text>
+<text x="88" y="220" text-anchor="end" class="label">96</text>
+<rect x="100" y="202" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="202" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="248" text-anchor="end" class="label">95</text>
+<rect x="100" y="230" width="250" height="28" fill="#7f2072" stroke="#ffffff"/>
+<text x="225.0" y="249.0" text-anchor="middle" class="power" fill="#17151f">48^2</text>
+<rect x="350" y="230" width="250" height="28" fill="#7e2072" stroke="#ffffff"/>
+<text x="475.0" y="249.0" text-anchor="middle" class="power" fill="#17151f">47^2</text>
+<text x="88" y="276" text-anchor="end" class="label">94</text>
+<rect x="100" y="258" width="250" height="28" fill="#d35b5f" stroke="#ffffff"/>
+<text x="225.0" y="277.0" text-anchor="middle" class="power" fill="#ffffff">421^2</text>
+<rect x="350" y="258" width="250" height="28" fill="#d35b5f" stroke="#ffffff"/>
+<text x="475.0" y="277.0" text-anchor="middle" class="power" fill="#ffffff">3^11</text>
+<text x="88" y="304" text-anchor="end" class="label">93</text>
+<rect x="100" y="286" width="250" height="28" fill="#ac3278" stroke="#ffffff"/>
+<text x="225.0" y="305.0" text-anchor="middle" class="power" fill="#17151f">130^2</text>
+<rect x="350" y="286" width="250" height="28" fill="#ab3278" stroke="#ffffff"/>
+<text x="475.0" y="305.0" text-anchor="middle" class="power" fill="#17151f">7^5</text>
+<text x="88" y="332" text-anchor="end" class="label">92</text>
+<rect x="100" y="314" width="250" height="28" fill="#9b2b76" stroke="#ffffff"/>
+<text x="225.0" y="333.0" text-anchor="middle" class="power" fill="#17151f">2^13</text>
+<rect x="350" y="314" width="250" height="28" fill="#9b2b76" stroke="#ffffff"/>
+<text x="475.0" y="333.0" text-anchor="middle" class="power" fill="#17151f">90^2</text>
+<text x="88" y="360" text-anchor="end" class="label">91</text>
+<rect x="100" y="342" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="342" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="388" text-anchor="end" class="label">90</text>
+<rect x="100" y="370" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="370" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="416" text-anchor="end" class="label">89</text>
+<rect x="100" y="398" width="250" height="28" fill="#7c1f72" stroke="#ffffff"/>
+<text x="225.0" y="417.0" text-anchor="middle" class="power" fill="#17151f">45^2</text>
+<rect x="350" y="398" width="250" height="28" fill="#7b1f72" stroke="#ffffff"/>
+<text x="475.0" y="417.0" text-anchor="middle" class="power" fill="#17151f">44^2</text>
+<text x="88" y="444" text-anchor="end" class="label">88</text>
+<rect x="100" y="426" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="426" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="472" text-anchor="end" class="label">87</text>
+<rect x="100" y="454" width="250" height="28" fill="#7b1f72" stroke="#ffffff"/>
+<text x="225.0" y="473.0" text-anchor="middle" class="power" fill="#17151f">44^2</text>
+<rect x="350" y="454" width="250" height="28" fill="#7a1e72" stroke="#ffffff"/>
+<text x="475.0" y="473.0" text-anchor="middle" class="power" fill="#17151f">43^2</text>
+<text x="88" y="500" text-anchor="end" class="label">86</text>
+<rect x="100" y="482" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="482" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="528" text-anchor="end" class="label">85</text>
+<rect x="100" y="510" width="250" height="28" fill="#7a1e72" stroke="#ffffff"/>
+<text x="225.0" y="529.0" text-anchor="middle" class="power" fill="#17151f">43^2</text>
+<rect x="350" y="510" width="250" height="28" fill="#791e72" stroke="#ffffff"/>
+<text x="475.0" y="529.0" text-anchor="middle" class="power" fill="#17151f">42^2</text>
+<text x="88" y="556" text-anchor="end" class="label">84</text>
+<rect x="100" y="538" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="538" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="584" text-anchor="end" class="label">83</text>
+<rect x="100" y="566" width="250" height="28" fill="#af3378" stroke="#ffffff"/>
+<text x="225.0" y="585.0" text-anchor="middle" class="power" fill="#ffffff">3^9</text>
+<rect x="350" y="566" width="250" height="28" fill="#af3378" stroke="#ffffff"/>
+<text x="475.0" y="585.0" text-anchor="middle" class="power" fill="#ffffff">140^2</text>
+<text x="88" y="612" text-anchor="end" class="label">82</text>
+<rect x="100" y="594" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="594" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="640" text-anchor="end" class="label">81</text>
+<rect x="100" y="622" width="250" height="28" fill="#781d71" stroke="#ffffff"/>
+<text x="225.0" y="641.0" text-anchor="middle" class="power" fill="#17151f">41^2</text>
+<rect x="350" y="622" width="250" height="28" fill="#771d71" stroke="#ffffff"/>
+<text x="475.0" y="641.0" text-anchor="middle" class="power" fill="#17151f">40^2</text>
+<text x="88" y="668" text-anchor="end" class="label">80</text>
+<rect x="100" y="650" width="250" height="28" fill="#c84c69" stroke="#ffffff"/>
+<text x="225.0" y="669.0" text-anchor="middle" class="power" fill="#ffffff">292^2</text>
+<rect x="350" y="650" width="250" height="28" fill="#c84c69" stroke="#ffffff"/>
+<text x="475.0" y="669.0" text-anchor="middle" class="power" fill="#ffffff">44^3</text>
+<text x="88" y="696" text-anchor="end" class="label">79</text>
+<rect x="100" y="678" width="250" height="28" fill="#771d71" stroke="#ffffff"/>
+<text x="225.0" y="697.0" text-anchor="middle" class="power" fill="#17151f">40^2</text>
+<rect x="350" y="678" width="250" height="28" fill="#761d71" stroke="#ffffff"/>
+<text x="475.0" y="697.0" text-anchor="middle" class="power" fill="#17151f">39^2</text>
+<text x="88" y="724" text-anchor="end" class="label">78</text>
+<rect x="100" y="706" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="706" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="752" text-anchor="end" class="label">77</text>
+<rect x="100" y="734" width="250" height="28" fill="#761d71" stroke="#ffffff"/>
+<text x="225.0" y="753.0" text-anchor="middle" class="power" fill="#17151f">39^2</text>
+<rect x="350" y="734" width="250" height="28" fill="#751c71" stroke="#ffffff"/>
+<text x="475.0" y="753.0" text-anchor="middle" class="power" fill="#17151f">38^2</text>
+<text x="88" y="780" text-anchor="end" class="label">76</text>
+<rect x="100" y="762" width="250" height="28" fill="#ef7d47" stroke="#ffffff"/>
+<text x="225.0" y="781.0" text-anchor="middle" class="power" fill="#ffffff">101^3</text>
+<rect x="350" y="762" width="250" height="28" fill="#ef7d47" stroke="#ffffff"/>
+<text x="475.0" y="781.0" text-anchor="middle" class="power" fill="#ffffff">1015^2</text>
+<text x="88" y="808" text-anchor="end" class="label">75</text>
+<rect x="100" y="790" width="250" height="28" fill="#751c71" stroke="#ffffff"/>
+<text x="225.0" y="809.0" text-anchor="middle" class="power" fill="#17151f">38^2</text>
+<rect x="350" y="790" width="250" height="28" fill="#741c71" stroke="#ffffff"/>
+<text x="475.0" y="809.0" text-anchor="middle" class="power" fill="#17151f">37^2</text>
+<text x="88" y="836" text-anchor="end" class="label">74</text>
+<rect x="100" y="818" width="250" height="28" fill="#ee7c47" stroke="#ffffff"/>
+<text x="225.0" y="837.0" text-anchor="middle" class="power" fill="#ffffff">99^3</text>
+<rect x="350" y="818" width="250" height="28" fill="#ee7c47" stroke="#ffffff"/>
+<text x="475.0" y="837.0" text-anchor="middle" class="power" fill="#ffffff">985^2</text>
+<text x="88" y="864" text-anchor="end" class="label">73</text>
+<rect x="100" y="846" width="250" height="28" fill="#df6955" stroke="#ffffff"/>
+<text x="225.0" y="865.0" text-anchor="middle" class="power" fill="#ffffff">611^2</text>
+<rect x="350" y="846" width="250" height="28" fill="#df6955" stroke="#ffffff"/>
+<text x="475.0" y="865.0" text-anchor="middle" class="power" fill="#ffffff">72^3</text>
+<text x="88" y="892" text-anchor="end" class="label">72</text>
+<rect x="100" y="874" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="874" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="920" text-anchor="end" class="label">71</text>
+<rect x="100" y="902" width="250" height="28" fill="#721b71" stroke="#ffffff"/>
+<text x="225.0" y="921.0" text-anchor="middle" class="power" fill="#17151f">6^4</text>
+<rect x="350" y="902" width="250" height="28" fill="#711b71" stroke="#ffffff"/>
+<text x="475.0" y="921.0" text-anchor="middle" class="power" fill="#17151f">35^2</text>
+<text x="88" y="948" text-anchor="end" class="label">70</text>
+<rect x="100" y="930" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="930" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="976" text-anchor="end" class="label">69</text>
+<rect x="100" y="958" width="250" height="28" fill="#711b71" stroke="#ffffff"/>
+<text x="225.0" y="977.0" text-anchor="middle" class="power" fill="#17151f">35^2</text>
+<rect x="350" y="958" width="250" height="28" fill="#701a70" stroke="#ffffff"/>
+<text x="475.0" y="977.0" text-anchor="middle" class="power" fill="#17151f">34^2</text>
+<text x="88" y="1004" text-anchor="end" class="label">68</text>
+<rect x="100" y="986" width="250" height="28" fill="#7d1f72" stroke="#ffffff"/>
+<text x="225.0" y="1005.0" text-anchor="middle" class="power" fill="#17151f">46^2</text>
+<rect x="350" y="986" width="250" height="28" fill="#7d1f72" stroke="#ffffff"/>
+<text x="475.0" y="1005.0" text-anchor="middle" class="power" fill="#17151f">2^11</text>
+<text x="88" y="1032" text-anchor="end" class="label">67</text>
+<rect x="100" y="1014" width="250" height="28" fill="#701a70" stroke="#ffffff"/>
+<text x="225.0" y="1033.0" text-anchor="middle" class="power" fill="#17151f">34^2</text>
+<rect x="350" y="1014" width="250" height="28" fill="#6f1a70" stroke="#ffffff"/>
+<text x="475.0" y="1033.0" text-anchor="middle" class="power" fill="#17151f">33^2</text>
+<text x="88" y="1060" text-anchor="end" class="label">66</text>
+<rect x="100" y="1042" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1042" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1088" text-anchor="end" class="label">65</text>
+<rect x="100" y="1070" width="250" height="28" fill="#6f1a70" stroke="#ffffff"/>
+<text x="225.0" y="1089.0" text-anchor="middle" class="power" fill="#17151f">33^2</text>
+<rect x="350" y="1070" width="250" height="28" fill="#6d1970" stroke="#ffffff"/>
+<text x="475.0" y="1089.0" text-anchor="middle" class="power" fill="#17151f">2^10</text>
+<text x="88" y="1116" text-anchor="end" class="label">64</text>
+<rect x="100" y="1098" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1098" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1144" text-anchor="end" class="label">63</text>
+<rect x="100" y="1126" width="250" height="28" fill="#fcfdbf" stroke="#ffffff"/>
+<text x="225.0" y="1145.0" text-anchor="middle" class="power" fill="#ffffff">568^3</text>
+<rect x="350" y="1126" width="250" height="28" fill="#fcfdbf" stroke="#ffffff"/>
+<text x="475.0" y="1145.0" text-anchor="middle" class="power" fill="#ffffff">13537^2</text>
+<text x="88" y="1172" text-anchor="end" class="label">62</text>
+<rect x="100" y="1154" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1154" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1200" text-anchor="end" class="label">61</text>
+<rect x="100" y="1182" width="250" height="28" fill="#6c1870" stroke="#ffffff"/>
+<text x="225.0" y="1201.0" text-anchor="middle" class="power" fill="#17151f">31^2</text>
+<rect x="350" y="1182" width="250" height="28" fill="#6a1870" stroke="#ffffff"/>
+<text x="475.0" y="1201.0" text-anchor="middle" class="power" fill="#17151f">30^2</text>
+<text x="88" y="1228" text-anchor="end" class="label">60</text>
+<rect x="100" y="1210" width="250" height="28" fill="#fb8f40" stroke="#ffffff"/>
+<text x="225.0" y="1229.0" text-anchor="middle" class="power" fill="#ffffff">136^3</text>
+<rect x="350" y="1210" width="250" height="28" fill="#fb8f40" stroke="#ffffff"/>
+<text x="475.0" y="1229.0" text-anchor="middle" class="power" fill="#ffffff">1586^2</text>
+<text x="88" y="1256" text-anchor="end" class="label">59</text>
+<rect x="100" y="1238" width="250" height="28" fill="#6a1870" stroke="#ffffff"/>
+<text x="225.0" y="1257.0" text-anchor="middle" class="power" fill="#17151f">30^2</text>
+<rect x="350" y="1238" width="250" height="28" fill="#691770" stroke="#ffffff"/>
+<text x="475.0" y="1257.0" text-anchor="middle" class="power" fill="#17151f">29^2</text>
+<text x="88" y="1284" text-anchor="end" class="label">58</text>
+<rect x="100" y="1266" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1266" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1312" text-anchor="end" class="label">57</text>
+<rect x="100" y="1294" width="250" height="28" fill="#691770" stroke="#ffffff"/>
+<text x="225.0" y="1313.0" text-anchor="middle" class="power" fill="#17151f">29^2</text>
+<rect x="350" y="1294" width="250" height="28" fill="#67176f" stroke="#ffffff"/>
+<text x="475.0" y="1313.0" text-anchor="middle" class="power" fill="#17151f">28^2</text>
+<text x="88" y="1340" text-anchor="end" class="label">56</text>
+<rect x="100" y="1322" width="250" height="28" fill="#942875" stroke="#ffffff"/>
+<text x="225.0" y="1341.0" text-anchor="middle" class="power" fill="#17151f">18^3</text>
+<rect x="350" y="1322" width="250" height="28" fill="#942875" stroke="#ffffff"/>
+<text x="475.0" y="1341.0" text-anchor="middle" class="power" fill="#17151f">76^2</text>
+<text x="88" y="1368" text-anchor="end" class="label">55</text>
+<rect x="100" y="1350" width="250" height="28" fill="#67176f" stroke="#ffffff"/>
+<text x="225.0" y="1369.0" text-anchor="middle" class="power" fill="#17151f">28^2</text>
+<rect x="350" y="1350" width="250" height="28" fill="#66166f" stroke="#ffffff"/>
+<text x="475.0" y="1369.0" text-anchor="middle" class="power" fill="#17151f">3^6</text>
+<text x="88" y="1396" text-anchor="end" class="label">54</text>
+<rect x="100" y="1378" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1378" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1424" text-anchor="end" class="label">53</text>
+<rect x="100" y="1406" width="250" height="28" fill="#66166f" stroke="#ffffff"/>
+<text x="225.0" y="1425.0" text-anchor="middle" class="power" fill="#17151f">3^6</text>
+<rect x="350" y="1406" width="250" height="28" fill="#64156f" stroke="#ffffff"/>
+<text x="475.0" y="1425.0" text-anchor="middle" class="power" fill="#17151f">26^2</text>
+<text x="88" y="1452" text-anchor="end" class="label">52</text>
+<rect x="100" y="1434" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1434" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1480" text-anchor="end" class="label">51</text>
+<rect x="100" y="1462" width="250" height="28" fill="#64156f" stroke="#ffffff"/>
+<text x="225.0" y="1481.0" text-anchor="middle" class="power" fill="#17151f">26^2</text>
+<rect x="350" y="1462" width="250" height="28" fill="#62156f" stroke="#ffffff"/>
+<text x="475.0" y="1481.0" text-anchor="middle" class="power" fill="#17151f">5^4</text>
+<text x="88" y="1508" text-anchor="end" class="label">50</text>
+<rect x="100" y="1490" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1490" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1536" text-anchor="end" class="label">49</text>
+<rect x="100" y="1518" width="250" height="28" fill="#62156f" stroke="#ffffff"/>
+<text x="225.0" y="1537.0" text-anchor="middle" class="power" fill="#17151f">5^4</text>
+<rect x="350" y="1518" width="250" height="28" fill="#60146f" stroke="#ffffff"/>
+<text x="475.0" y="1537.0" text-anchor="middle" class="power" fill="#17151f">24^2</text>
+<text x="88" y="1564" text-anchor="end" class="label">48</text>
+<rect x="100" y="1546" width="250" height="28" fill="#b13478" stroke="#ffffff"/>
+<text x="225.0" y="1565.0" text-anchor="middle" class="power" fill="#ffffff">28^3</text>
+<rect x="350" y="1546" width="250" height="28" fill="#b13478" stroke="#ffffff"/>
+<text x="475.0" y="1565.0" text-anchor="middle" class="power" fill="#ffffff">148^2</text>
+<text x="88" y="1592" text-anchor="end" class="label">47</text>
+<rect x="100" y="1574" width="250" height="28" fill="#60146f" stroke="#ffffff"/>
+<text x="225.0" y="1593.0" text-anchor="middle" class="power" fill="#17151f">24^2</text>
+<rect x="350" y="1574" width="250" height="28" fill="#5f136e" stroke="#ffffff"/>
+<text x="475.0" y="1593.0" text-anchor="middle" class="power" fill="#17151f">23^2</text>
+<text x="88" y="1620" text-anchor="end" class="label">46</text>
+<rect x="100" y="1602" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1602" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1648" text-anchor="end" class="label">45</text>
+<rect x="100" y="1630" width="250" height="28" fill="#9e2d76" stroke="#ffffff"/>
+<text x="225.0" y="1649.0" text-anchor="middle" class="power" fill="#17151f">21^3</text>
+<rect x="350" y="1630" width="250" height="28" fill="#9e2c76" stroke="#ffffff"/>
+<text x="475.0" y="1649.0" text-anchor="middle" class="power" fill="#17151f">96^2</text>
+<text x="88" y="1676" text-anchor="end" class="label">44</text>
+<rect x="100" y="1658" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1658" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1704" text-anchor="end" class="label">43</text>
+<rect x="100" y="1686" width="250" height="28" fill="#5d126e" stroke="#ffffff"/>
+<text x="225.0" y="1705.0" text-anchor="middle" class="power" fill="#17151f">22^2</text>
+<rect x="350" y="1686" width="250" height="28" fill="#5b126e" stroke="#ffffff"/>
+<text x="475.0" y="1705.0" text-anchor="middle" class="power" fill="#17151f">21^2</text>
+<text x="88" y="1732" text-anchor="end" class="label">42</text>
+<rect x="100" y="1714" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1714" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1760" text-anchor="end" class="label">41</text>
+<rect x="100" y="1742" width="250" height="28" fill="#5b126e" stroke="#ffffff"/>
+<text x="225.0" y="1761.0" text-anchor="middle" class="power" fill="#17151f">21^2</text>
+<rect x="350" y="1742" width="250" height="28" fill="#58116e" stroke="#ffffff"/>
+<text x="475.0" y="1761.0" text-anchor="middle" class="power" fill="#17151f">20^2</text>
+<text x="88" y="1788" text-anchor="end" class="label">40</text>
+<rect x="100" y="1770" width="250" height="28" fill="#832273" stroke="#ffffff"/>
+<text x="225.0" y="1789.0" text-anchor="middle" class="power" fill="#17151f">14^3</text>
+<rect x="350" y="1770" width="250" height="28" fill="#832273" stroke="#ffffff"/>
+<text x="475.0" y="1789.0" text-anchor="middle" class="power" fill="#17151f">52^2</text>
+<text x="88" y="1816" text-anchor="end" class="label">39</text>
+<rect x="100" y="1798" width="250" height="28" fill="#58116e" stroke="#ffffff"/>
+<text x="225.0" y="1817.0" text-anchor="middle" class="power" fill="#17151f">20^2</text>
+<rect x="350" y="1798" width="250" height="28" fill="#56106d" stroke="#ffffff"/>
+<text x="475.0" y="1817.0" text-anchor="middle" class="power" fill="#17151f">19^2</text>
+<text x="88" y="1844" text-anchor="end" class="label">38</text>
+<rect x="100" y="1826" width="250" height="28" fill="#741c71" stroke="#ffffff"/>
+<text x="225.0" y="1845.0" text-anchor="middle" class="power" fill="#17151f">37^2</text>
+<rect x="350" y="1826" width="250" height="28" fill="#731b71" stroke="#ffffff"/>
+<text x="475.0" y="1845.0" text-anchor="middle" class="power" fill="#17151f">11^3</text>
+<text x="88" y="1872" text-anchor="end" class="label">37</text>
+<rect x="100" y="1854" width="250" height="28" fill="#fbbc73" stroke="#ffffff"/>
+<text x="225.0" y="1873.0" text-anchor="middle" class="power" fill="#ffffff">3788^2</text>
+<rect x="350" y="1854" width="250" height="28" fill="#fbbc73" stroke="#ffffff"/>
+<text x="475.0" y="1873.0" text-anchor="middle" class="power" fill="#ffffff">3^15</text>
+<text x="88" y="1900" text-anchor="end" class="label">36</text>
+<rect x="100" y="1882" width="250" height="28" fill="#791e72" stroke="#ffffff"/>
+<text x="225.0" y="1901.0" text-anchor="middle" class="power" fill="#17151f">42^2</text>
+<rect x="350" y="1882" width="250" height="28" fill="#791e72" stroke="#ffffff"/>
+<text x="475.0" y="1901.0" text-anchor="middle" class="power" fill="#17151f">12^3</text>
+<text x="88" y="1928" text-anchor="end" class="label">35</text>
+<rect x="100" y="1910" width="250" height="28" fill="#540f6d" stroke="#ffffff"/>
+<text x="225.0" y="1929.0" text-anchor="middle" class="power" fill="#17151f">18^2</text>
+<rect x="350" y="1910" width="250" height="28" fill="#520f6b" stroke="#ffffff"/>
+<text x="475.0" y="1929.0" text-anchor="middle" class="power" fill="#17151f">17^2</text>
+<text x="88" y="1956" text-anchor="end" class="label">34</text>
+<rect x="100" y="1938" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="1938" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="1984" text-anchor="end" class="label">33</text>
+<rect x="100" y="1966" width="250" height="28" fill="#520f6b" stroke="#ffffff"/>
+<text x="225.0" y="1985.0" text-anchor="middle" class="power" fill="#17151f">17^2</text>
+<rect x="350" y="1966" width="250" height="28" fill="#500f69" stroke="#ffffff"/>
+<text x="475.0" y="1985.0" text-anchor="middle" class="power" fill="#17151f">2^8</text>
+<text x="88" y="2012" text-anchor="end" class="label">32</text>
+<rect x="100" y="1994" width="250" height="28" fill="#9a2b76" stroke="#ffffff"/>
+<text x="225.0" y="2013.0" text-anchor="middle" class="power" fill="#17151f">6^5</text>
+<rect x="350" y="1994" width="250" height="28" fill="#9a2b76" stroke="#ffffff"/>
+<text x="475.0" y="2013.0" text-anchor="middle" class="power" fill="#17151f">88^2</text>
+<text x="88" y="2040" text-anchor="end" class="label">31</text>
+<rect x="100" y="2022" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="2022" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="2068" text-anchor="end" class="label">30</text>
+<rect x="100" y="2050" width="250" height="28" fill="#982a75" stroke="#ffffff"/>
+<text x="225.0" y="2069.0" text-anchor="middle" class="power" fill="#17151f">83^2</text>
+<rect x="350" y="2050" width="250" height="28" fill="#972a75" stroke="#ffffff"/>
+<text x="475.0" y="2069.0" text-anchor="middle" class="power" fill="#17151f">19^3</text>
+<text x="88" y="2096" text-anchor="end" class="label">29</text>
+<rect x="100" y="2078" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="2078" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="2124" text-anchor="end" class="label">28</text>
+<rect x="100" y="2106" width="250" height="28" fill="#5e136e" stroke="#ffffff"/>
+<text x="225.0" y="2125.0" text-anchor="middle" class="power" fill="#17151f">2^9</text>
+<rect x="350" y="2106" width="250" height="28" fill="#5d126e" stroke="#ffffff"/>
+<text x="475.0" y="2125.0" text-anchor="middle" class="power" fill="#17151f">22^2</text>
+<text x="88" y="2152" text-anchor="end" class="label">27</text>
+<rect x="100" y="2134" width="250" height="28" fill="#4c0e65" stroke="#ffffff"/>
+<text x="225.0" y="2153.0" text-anchor="middle" class="power" fill="#17151f">14^2</text>
+<rect x="350" y="2134" width="250" height="28" fill="#490e63" stroke="#ffffff"/>
+<text x="475.0" y="2153.0" text-anchor="middle" class="power" fill="#17151f">13^2</text>
+<text x="88" y="2180" text-anchor="end" class="label">26</text>
+<rect x="100" y="2162" width="250" height="28" fill="#bd3f73" stroke="#ffffff"/>
+<text x="225.0" y="2181.0" text-anchor="middle" class="power" fill="#ffffff">35^3</text>
+<rect x="350" y="2162" width="250" height="28" fill="#bd3f73" stroke="#ffffff"/>
+<text x="475.0" y="2181.0" text-anchor="middle" class="power" fill="#ffffff">207^2</text>
+<text x="88" y="2208" text-anchor="end" class="label">25</text>
+<rect x="100" y="2190" width="250" height="28" fill="#490e63" stroke="#ffffff"/>
+<text x="225.0" y="2209.0" text-anchor="middle" class="power" fill="#17151f">13^2</text>
+<rect x="350" y="2190" width="250" height="28" fill="#470e60" stroke="#ffffff"/>
+<text x="475.0" y="2209.0" text-anchor="middle" class="power" fill="#17151f">12^2</text>
+<text x="88" y="2236" text-anchor="end" class="label">24</text>
+<rect x="100" y="2218" width="250" height="28" fill="#6d1970" stroke="#ffffff"/>
+<text x="225.0" y="2237.0" text-anchor="middle" class="power" fill="#17151f">2^10</text>
+<rect x="350" y="2218" width="250" height="28" fill="#6d1970" stroke="#ffffff"/>
+<text x="475.0" y="2237.0" text-anchor="middle" class="power" fill="#17151f">10^3</text>
+<text x="88" y="2264" text-anchor="end" class="label">23</text>
+<rect x="100" y="2246" width="250" height="28" fill="#7d1f72" stroke="#ffffff"/>
+<text x="225.0" y="2265.0" text-anchor="middle" class="power" fill="#17151f">2^11</text>
+<rect x="350" y="2246" width="250" height="28" fill="#7c1f72" stroke="#ffffff"/>
+<text x="475.0" y="2265.0" text-anchor="middle" class="power" fill="#17151f">45^2</text>
+<text x="88" y="2292" text-anchor="end" class="label">22</text>
+<rect x="100" y="2274" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="2274" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="2320" text-anchor="end" class="label">21</text>
+<rect x="100" y="2302" width="250" height="28" fill="#440d5e" stroke="#ffffff"/>
+<text x="225.0" y="2321.0" text-anchor="middle" class="power" fill="#17151f">11^2</text>
+<rect x="350" y="2302" width="250" height="28" fill="#410d5b" stroke="#ffffff"/>
+<text x="475.0" y="2321.0" text-anchor="middle" class="power" fill="#17151f">10^2</text>
+<text x="88" y="2348" text-anchor="end" class="label">20</text>
+<rect x="100" y="2330" width="250" height="28" fill="#4d0e67" stroke="#ffffff"/>
+<text x="225.0" y="2349.0" text-anchor="middle" class="power" fill="#17151f">6^3</text>
+<rect x="350" y="2330" width="250" height="28" fill="#4c0e65" stroke="#ffffff"/>
+<text x="475.0" y="2349.0" text-anchor="middle" class="power" fill="#17151f">14^2</text>
+<text x="88" y="2376" text-anchor="end" class="label">19</text>
+<rect x="100" y="2358" width="250" height="28" fill="#410d5b" stroke="#ffffff"/>
+<text x="225.0" y="2377.0" text-anchor="middle" class="power" fill="#17151f">10^2</text>
+<rect x="350" y="2358" width="250" height="28" fill="#3d0c58" stroke="#ffffff"/>
+<text x="475.0" y="2377.0" text-anchor="middle" class="power" fill="#17151f">3^4</text>
+<text x="88" y="2404" text-anchor="end" class="label">18</text>
+<rect x="100" y="2386" width="250" height="28" fill="#4f0e68" stroke="#ffffff"/>
+<text x="225.0" y="2405.0" text-anchor="middle" class="power" fill="#17151f">3^5</text>
+<rect x="350" y="2386" width="250" height="28" fill="#4e0e67" stroke="#ffffff"/>
+<text x="475.0" y="2405.0" text-anchor="middle" class="power" fill="#17151f">15^2</text>
+<text x="88" y="2432" text-anchor="end" class="label">17</text>
+<rect x="100" y="2414" width="250" height="28" fill="#3d0c58" stroke="#ffffff"/>
+<text x="225.0" y="2433.0" text-anchor="middle" class="power" fill="#17151f">3^4</text>
+<rect x="350" y="2414" width="250" height="28" fill="#390c54" stroke="#ffffff"/>
+<text x="475.0" y="2433.0" text-anchor="middle" class="power" fill="#17151f">2^6</text>
+<text x="88" y="2460" text-anchor="end" class="label">16</text>
+<rect x="100" y="2442" width="250" height="28" fill="#470e60" stroke="#ffffff"/>
+<text x="225.0" y="2461.0" text-anchor="middle" class="power" fill="#17151f">12^2</text>
+<rect x="350" y="2442" width="250" height="28" fill="#450d5f" stroke="#ffffff"/>
+<text x="475.0" y="2461.0" text-anchor="middle" class="power" fill="#17151f">2^7</text>
+<text x="88" y="2488" text-anchor="end" class="label">15</text>
+<rect x="100" y="2470" width="250" height="28" fill="#390c54" stroke="#ffffff"/>
+<text x="225.0" y="2489.0" text-anchor="middle" class="power" fill="#17151f">2^6</text>
+<rect x="350" y="2470" width="250" height="28" fill="#350c50" stroke="#ffffff"/>
+<text x="475.0" y="2489.0" text-anchor="middle" class="power" fill="#17151f">7^2</text>
+<text x="88" y="2516" text-anchor="end" class="label">14</text>
+<rect x="100" y="2498" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="2498" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="2544" text-anchor="end" class="label">13</text>
+<rect x="100" y="2526" width="250" height="28" fill="#350c50" stroke="#ffffff"/>
+<text x="225.0" y="2545.0" text-anchor="middle" class="power" fill="#17151f">7^2</text>
+<rect x="350" y="2526" width="250" height="28" fill="#300b4b" stroke="#ffffff"/>
+<text x="475.0" y="2545.0" text-anchor="middle" class="power" fill="#17151f">6^2</text>
+<text x="88" y="2572" text-anchor="end" class="label">12</text>
+<rect x="100" y="2554" width="250" height="28" fill="#7e2072" stroke="#ffffff"/>
+<text x="225.0" y="2573.0" text-anchor="middle" class="power" fill="#17151f">47^2</text>
+<rect x="350" y="2554" width="250" height="28" fill="#7e2072" stroke="#ffffff"/>
+<text x="475.0" y="2573.0" text-anchor="middle" class="power" fill="#17151f">13^3</text>
+<text x="88" y="2600" text-anchor="end" class="label">11</text>
+<rect x="100" y="2582" width="250" height="28" fill="#862373" stroke="#ffffff"/>
+<text x="225.0" y="2601.0" text-anchor="middle" class="power" fill="#17151f">56^2</text>
+<rect x="350" y="2582" width="250" height="28" fill="#862373" stroke="#ffffff"/>
+<text x="475.0" y="2601.0" text-anchor="middle" class="power" fill="#17151f">5^5</text>
+<text x="88" y="2628" text-anchor="end" class="label">10</text>
+<rect x="100" y="2610" width="250" height="28" fill="#7e2072" stroke="#ffffff"/>
+<text x="225.0" y="2629.0" text-anchor="middle" class="power" fill="#17151f">13^3</text>
+<rect x="350" y="2610" width="250" height="28" fill="#7e2072" stroke="#ffffff"/>
+<text x="475.0" y="2629.0" text-anchor="middle" class="power" fill="#17151f">3^7</text>
+<text x="88" y="2656" text-anchor="end" class="label">9</text>
+<rect x="100" y="2638" width="250" height="28" fill="#2a0a46" stroke="#ffffff"/>
+<text x="225.0" y="2657.0" text-anchor="middle" class="power" fill="#17151f">5^2</text>
+<rect x="350" y="2638" width="250" height="28" fill="#230a3f" stroke="#ffffff"/>
+<text x="475.0" y="2657.0" text-anchor="middle" class="power" fill="#17151f">2^4</text>
+<text x="88" y="2684" text-anchor="end" class="label">8</text>
+<rect x="100" y="2666" width="250" height="28" fill="#ca4f67" stroke="#ffffff"/>
+<text x="225.0" y="2685.0" text-anchor="middle" class="power" fill="#ffffff">312^2</text>
+<rect x="350" y="2666" width="250" height="28" fill="#ca4f67" stroke="#ffffff"/>
+<text x="475.0" y="2685.0" text-anchor="middle" class="power" fill="#ffffff">46^3</text>
+<text x="88" y="2712" text-anchor="end" class="label">7</text>
+<rect x="100" y="2694" width="250" height="28" fill="#230a3f" stroke="#ffffff"/>
+<text x="225.0" y="2713.0" text-anchor="middle" class="power" fill="#17151f">2^4</text>
+<rect x="350" y="2694" width="250" height="28" fill="#190836" stroke="#ffffff"/>
+<text x="475.0" y="2713.0" text-anchor="middle" class="power" fill="#17151f">3^2</text>
+<text x="88" y="2740" text-anchor="end" class="label">6</text>
+<rect x="100" y="2722" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<rect x="350" y="2722" width="250" height="28" fill="#d9dde3" stroke="#ffffff"/>
+<text x="88" y="2768" text-anchor="end" class="label">5</text>
+<rect x="100" y="2750" width="250" height="28" fill="#2e0b4a" stroke="#ffffff"/>
+<text x="225.0" y="2769.0" text-anchor="middle" class="power" fill="#17151f">2^5</text>
+<rect x="350" y="2750" width="250" height="28" fill="#2b0a47" stroke="#ffffff"/>
+<text x="475.0" y="2769.0" text-anchor="middle" class="power" fill="#17151f">3^3</text>
+<text x="88" y="2796" text-anchor="end" class="label">4</text>
+<rect x="100" y="2778" width="250" height="28" fill="#170835" stroke="#ffffff"/>
+<text x="225.0" y="2797.0" text-anchor="middle" class="power" fill="#17151f">2^3</text>
+<rect x="350" y="2778" width="250" height="28" fill="#0c072a" stroke="#ffffff"/>
+<text x="475.0" y="2797.0" text-anchor="middle" class="power" fill="#17151f">2^2</text>
+<text x="88" y="2824" text-anchor="end" class="label">3</text>
+<rect x="100" y="2806" width="250" height="28" fill="#450d5f" stroke="#ffffff"/>
+<text x="225.0" y="2825.0" text-anchor="middle" class="power" fill="#17151f">2^7</text>
+<rect x="350" y="2806" width="250" height="28" fill="#440d5e" stroke="#ffffff"/>
+<text x="475.0" y="2825.0" text-anchor="middle" class="power" fill="#17151f">5^3</text>
+<text x="88" y="2852" text-anchor="end" class="label">2</text>
+<rect x="100" y="2834" width="250" height="28" fill="#2b0a47" stroke="#ffffff"/>
+<text x="225.0" y="2853.0" text-anchor="middle" class="power" fill="#17151f">3^3</text>
+<rect x="350" y="2834" width="250" height="28" fill="#2a0a46" stroke="#ffffff"/>
+<text x="475.0" y="2853.0" text-anchor="middle" class="power" fill="#17151f">5^2</text>
+<text x="88" y="2880" text-anchor="end" class="label">1</text>
+<rect x="100" y="2862" width="250" height="28" fill="#190836" stroke="#ffffff"/>
+<text x="225.0" y="2881.0" text-anchor="middle" class="power" fill="#17151f">3^2</text>
+<rect x="350" y="2862" width="250" height="28" fill="#170835" stroke="#ffffff"/>
+<text x="475.0" y="2881.0" text-anchor="middle" class="power" fill="#17151f">2^3</text>
+<text x="100" y="2918" class="label" fill="#59636e">Gray = unknown</text>
+<text x="600" y="2918" text-anchor="end" class="label" fill="#59636e">Gap size n</text>
+</svg>

@@ -1,0 +1,551 @@
+ALL CONSECUTIVE PERFECT-POWER GAPS OF SIZE 1 THROUGH 100
+A finite computational census up to 10^9
+
+Abstract
+
+We enumerate every pair of consecutive distinct perfect powers whose
+difference is at most 100 and whose larger member is at most 10^9. For each
+gap size n from 1 to 100, the census gives the number of such pairs and lists
+every pair. The search finds 114 pairs, representing 73 distinct gap sizes.
+The remaining 27 gap sizes have no such pair within this bound. These are
+finite-search results and do not assert that a missing gap is impossible.
+
+1. Definitions and scope
+
+A perfect power is an integer of the form a^k, where a and k are integers
+with a >= 2 and k >= 2. Equal values with different power representations
+are treated as one perfect power. Write the distinct perfect powers in
+increasing order as
+
+    p_1 < p_2 < p_3 < ... .
+
+For each integer n with 1 <= n <= 100, we count the indices i such that
+
+    p_(i+1) <= 10^9  and  p_(i+1) - p_i = n.
+
+Thus a solution is an adjacent pair in the complete ordered list of
+distinct perfect powers, not merely any two powers with difference n. The
+lower and upper values are both at most 10^9. Every solution is printed
+below as a difference of powers and as a difference of integers. Each value
+is given one convenient reduced power representation; equivalent spellings
+of the same value are not counted as additional solutions.
+
+2. Enumeration method
+
+For every prime exponent q <= floor(log_2(10^9)), the search generates all
+integer powers b^q <= 10^9 for b >= 2. Every perfect power occurs among
+these generated values: if its exponent is composite, it has a prime
+divisor, and the base can be raised accordingly. The values are deduplicated
+and sorted; adjacent entries are scanned and differences from 1 through
+100 are recorded.
+
+This procedure yields 32,669 distinct perfect-power values up to 10^9.
+Scanning adjacent values gives 114 qualifying pairs in total. The census is
+exhaustive for the stated bound and gap range.
+
+3. Counts by gap size
+
+The table gives the number C_n of qualifying adjacent pairs for each gap n.
+
+    n     C_n       n     C_n       n     C_n       n     C_n
+    1       1       26      2       51      1       76      1
+    2       1       27      1       52      0       77      1
+    3       1       28      3       53      2       78      0
+    4       3       29      0       54      0       79      3
+    5       1       30      1       55      2       80      1
+    6       0       31      0       56      1       81      1
+    7       2       32      1       57      1       82      0
+    8       1       33      1       58      0       83      1
+    9       3       34      0       59      1       84      0
+   10       1       35      2       60      1       85      1
+   11       2       36      1       61      1       86      0
+   12       1       37      1       62      0       87      1
+   13       3       38      1       63      1       88      0
+   14       0       39      3       64      0       89      3
+   15       2       40      1       65      3       90      0
+   16       1       41      1       66      0       91      0
+   17       4       42      0       67      2       92      1
+   18       2       43      1       68      2       93      1
+   19       3       44      0       69      1       94      1
+   20       1       45      1       70      0       95      2
+   21       1       46      0       71      2       96      0
+   22       0       47      3       72      0       97      2
+   23       1       48      1       73      2       98      0
+   24       1       49      2       74      1       99      1
+   25       1       50      0       75      1      100      4
+
+In particular, 73 gap sizes occur at least once and 27 have count zero.
+There are 114 pairs in all. The largest count for any one gap is 4, attained
+by gaps 17 and 100.
+
+4. Complete list of solutions
+
+Each displayed line has the form
+
+    upper perfect power - lower perfect power = upper value - lower value = n.
+
+Gap n = 1 (1 solution)
+    3^2 - 2^3 = 9 - 8 = 1
+
+Gap n = 2 (1 solution)
+    3^3 - 5^2 = 27 - 25 = 2
+
+Gap n = 3 (1 solution)
+    2^7 - 5^3 = 128 - 125 = 3
+
+Gap n = 4 (3 solutions)
+    2^3 - 2^2 = 8 - 4 = 4
+    6^2 - 2^5 = 36 - 32 = 4
+    5^3 - 11^2 = 125 - 121 = 4
+
+Gap n = 5 (1 solution)
+    2^5 - 3^3 = 32 - 27 = 5
+
+Gap n = 6 (0 solutions)
+    None within the stated bound.
+
+Gap n = 7 (2 solutions)
+    2^4 - 3^2 = 16 - 9 = 7
+    2^15 - 181^2 = 32768 - 32761 = 7
+
+Gap n = 8 (1 solution)
+    312^2 - 46^3 = 97344 - 97336 = 8
+
+Gap n = 9 (3 solutions)
+    5^2 - 2^4 = 25 - 16 = 9
+    15^2 - 6^3 = 225 - 216 = 9
+    253^2 - 40^3 = 64009 - 64000 = 9
+
+Gap n = 10 (1 solution)
+    13^3 - 3^7 = 2197 - 2187 = 10
+
+Gap n = 11 (2 solutions)
+    56^2 - 5^5 = 3136 - 3125 = 11
+    15^3 - 58^2 = 3375 - 3364 = 11
+
+Gap n = 12 (1 solution)
+    47^2 - 13^3 = 2209 - 2197 = 12
+
+Gap n = 13 (3 solutions)
+    7^2 - 6^2 = 49 - 36 = 13
+    2^8 - 3^5 = 256 - 243 = 13
+    17^3 - 70^2 = 4913 - 4900 = 13
+
+Gap n = 14 (0 solutions)
+    None within the stated bound.
+
+Gap n = 15 (2 solutions)
+    2^6 - 7^2 = 64 - 49 = 15
+    1138^2 - 109^3 = 1295044 - 1295029 = 15
+
+Gap n = 16 (1 solution)
+    12^2 - 2^7 = 144 - 128 = 16
+
+Gap n = 17 (4 solutions)
+    3^4 - 2^6 = 81 - 64 = 17
+    23^2 - 2^9 = 529 - 512 = 17
+    282^2 - 43^3 = 79524 - 79507 = 17
+    375^2 - 52^3 = 140625 - 140608 = 17
+
+Gap n = 18 (2 solutions)
+    3^5 - 15^2 = 243 - 225 = 18
+    19^2 - 7^3 = 361 - 343 = 18
+
+Gap n = 19 (3 solutions)
+    10^2 - 3^4 = 100 - 81 = 19
+    7^3 - 18^2 = 343 - 324 = 19
+    55^5 - 22434^2 = 503284375 - 503284356 = 19
+
+Gap n = 20 (1 solution)
+    6^3 - 14^2 = 216 - 196 = 20
+
+Gap n = 21 (1 solution)
+    11^2 - 10^2 = 121 - 100 = 21
+
+Gap n = 22 (0 solutions)
+    None within the stated bound.
+
+Gap n = 23 (1 solution)
+    2^11 - 45^2 = 2048 - 2025 = 23
+
+Gap n = 24 (1 solution)
+    2^10 - 10^3 = 1024 - 1000 = 24
+
+Gap n = 25 (1 solution)
+    13^2 - 12^2 = 169 - 144 = 25
+
+Gap n = 26 (2 solutions)
+    35^3 - 207^2 = 42875 - 42849 = 26
+    2537^2 - 23^5 = 6436369 - 6436343 = 26
+
+Gap n = 27 (1 solution)
+    14^2 - 13^2 = 196 - 169 = 27
+
+Gap n = 28 (3 solutions)
+    2^9 - 22^2 = 512 - 484 = 28
+    37^3 - 15^4 = 50653 - 50625 = 28
+    2^17 - 362^2 = 131072 - 131044 = 28
+
+Gap n = 29 (0 solutions)
+    None within the stated bound.
+
+Gap n = 30 (1 solution)
+    83^2 - 19^3 = 6889 - 6859 = 30
+
+Gap n = 31 (0 solutions)
+    None within the stated bound.
+
+Gap n = 32 (1 solution)
+    6^5 - 88^2 = 7776 - 7744 = 32
+
+Gap n = 33 (1 solution)
+    17^2 - 2^8 = 289 - 256 = 33
+
+Gap n = 34 (0 solutions)
+    None within the stated bound.
+
+Gap n = 35 (2 solutions)
+    18^2 - 17^2 = 324 - 289 = 35
+    11^3 - 6^4 = 1331 - 1296 = 35
+
+Gap n = 36 (1 solution)
+    42^2 - 12^3 = 1764 - 1728 = 36
+
+Gap n = 37 (1 solution)
+    3788^2 - 3^15 = 14348944 - 14348907 = 37
+
+Gap n = 38 (1 solution)
+    37^2 - 11^3 = 1369 - 1331 = 38
+
+Gap n = 39 (3 solutions)
+    20^2 - 19^2 = 400 - 361 = 39
+    10^3 - 31^2 = 1000 - 961 = 39
+    22^3 - 103^2 = 10648 - 10609 = 39
+
+Gap n = 40 (1 solution)
+    14^3 - 52^2 = 2744 - 2704 = 40
+
+Gap n = 41 (1 solution)
+    21^2 - 20^2 = 441 - 400 = 41
+
+Gap n = 42 (0 solutions)
+    None within the stated bound.
+
+Gap n = 43 (1 solution)
+    22^2 - 21^2 = 484 - 441 = 43
+
+Gap n = 44 (0 solutions)
+    None within the stated bound.
+
+Gap n = 45 (1 solution)
+    21^3 - 96^2 = 9261 - 9216 = 45
+
+Gap n = 46 (0 solutions)
+    None within the stated bound.
+
+Gap n = 47 (3 solutions)
+    24^2 - 23^2 = 576 - 529 = 47
+    12^3 - 41^2 = 1728 - 1681 = 47
+    63^3 - 500^2 = 250047 - 250000 = 47
+
+Gap n = 48 (1 solution)
+    28^3 - 148^2 = 21952 - 21904 = 48
+
+Gap n = 49 (2 solutions)
+    5^4 - 24^2 = 625 - 576 = 49
+    65^3 - 524^2 = 274625 - 274576 = 49
+
+Gap n = 50 (0 solutions)
+    None within the stated bound.
+
+Gap n = 51 (1 solution)
+    26^2 - 5^4 = 676 - 625 = 51
+
+Gap n = 52 (0 solutions)
+    None within the stated bound.
+
+Gap n = 53 (2 solutions)
+    3^6 - 26^2 = 729 - 676 = 53
+    29^3 - 156^2 = 24389 - 24336 = 53
+
+Gap n = 54 (0 solutions)
+    None within the stated bound.
+
+Gap n = 55 (2 solutions)
+    28^2 - 3^6 = 784 - 729 = 55
+    56^3 - 419^2 = 175616 - 175561 = 55
+
+Gap n = 56 (1 solution)
+    18^3 - 76^2 = 5832 - 5776 = 56
+
+Gap n = 57 (1 solution)
+    29^2 - 28^2 = 841 - 784 = 57
+
+Gap n = 58 (0 solutions)
+    None within the stated bound.
+
+Gap n = 59 (1 solution)
+    30^2 - 29^2 = 900 - 841 = 59
+
+Gap n = 60 (1 solution)
+    136^3 - 1586^2 = 2515456 - 2515396 = 60
+
+Gap n = 61 (1 solution)
+    31^2 - 30^2 = 961 - 900 = 61
+
+Gap n = 62 (0 solutions)
+    None within the stated bound.
+
+Gap n = 63 (1 solution)
+    568^3 - 13537^2 = 183250432 - 183250369 = 63
+
+Gap n = 64 (0 solutions)
+    None within the stated bound.
+
+Gap n = 65 (3 solutions)
+    33^2 - 2^10 = 1089 - 1024 = 65
+    53^2 - 14^3 = 2809 - 2744 = 65
+    14113^2 - 584^3 = 199176769 - 199176704 = 65
+
+Gap n = 66 (0 solutions)
+    None within the stated bound.
+
+Gap n = 67 (2 solutions)
+    34^2 - 33^2 = 1156 - 1089 = 67
+    23^3 - 110^2 = 12167 - 12100 = 67
+
+Gap n = 68 (2 solutions)
+    46^2 - 2^11 = 2116 - 2048 = 68
+    1874^2 - 152^3 = 3511876 - 3511808 = 68
+
+Gap n = 69 (1 solution)
+    35^2 - 34^2 = 1225 - 1156 = 69
+
+Gap n = 70 (0 solutions)
+    None within the stated bound.
+
+Gap n = 71 (2 solutions)
+    6^4 - 35^2 = 1296 - 1225 = 71
+    3^7 - 46^2 = 2187 - 2116 = 71
+
+Gap n = 72 (0 solutions)
+    None within the stated bound.
+
+Gap n = 73 (2 solutions)
+    611^2 - 72^3 = 373321 - 373248 = 73
+    6717^2 - 356^3 = 45118089 - 45118016 = 73
+
+Gap n = 74 (1 solution)
+    99^3 - 985^2 = 970299 - 970225 = 74
+
+Gap n = 75 (1 solution)
+    38^2 - 37^2 = 1444 - 1369 = 75
+
+Gap n = 76 (1 solution)
+    101^3 - 1015^2 = 1030301 - 1030225 = 76
+
+Gap n = 77 (1 solution)
+    39^2 - 38^2 = 1521 - 1444 = 77
+
+Gap n = 78 (0 solutions)
+    None within the stated bound.
+
+Gap n = 79 (3 solutions)
+    40^2 - 39^2 = 1600 - 1521 = 79
+    20^3 - 89^2 = 8000 - 7921 = 79
+    302^2 - 45^3 = 91204 - 91125 = 79
+
+Gap n = 80 (1 solution)
+    292^2 - 44^3 = 85264 - 85184 = 80
+
+Gap n = 81 (1 solution)
+    41^2 - 40^2 = 1681 - 1600 = 81
+
+Gap n = 82 (0 solutions)
+    None within the stated bound.
+
+Gap n = 83 (1 solution)
+    3^9 - 140^2 = 19683 - 19600 = 83
+
+Gap n = 84 (0 solutions)
+    None within the stated bound.
+
+Gap n = 85 (1 solution)
+    43^2 - 42^2 = 1849 - 1764 = 85
+
+Gap n = 86 (0 solutions)
+    None within the stated bound.
+
+Gap n = 87 (1 solution)
+    44^2 - 43^2 = 1936 - 1849 = 87
+
+Gap n = 88 (0 solutions)
+    None within the stated bound.
+
+Gap n = 89 (3 solutions)
+    45^2 - 44^2 = 2025 - 1936 = 89
+    91^2 - 2^13 = 8281 - 8192 = 89
+    408^2 - 55^3 = 166464 - 166375 = 89
+
+Gap n = 90 (0 solutions)
+    None within the stated bound.
+
+Gap n = 91 (0 solutions)
+    None within the stated bound.
+
+Gap n = 92 (1 solution)
+    2^13 - 90^2 = 8192 - 8100 = 92
+
+Gap n = 93 (1 solution)
+    130^2 - 7^5 = 16900 - 16807 = 93
+
+Gap n = 94 (1 solution)
+    421^2 - 3^11 = 177241 - 177147 = 94
+
+Gap n = 95 (2 solutions)
+    48^2 - 47^2 = 2304 - 2209 = 95
+    6^7 - 23^4 = 279936 - 279841 = 95
+
+Gap n = 96 (0 solutions)
+    None within the stated bound.
+
+Gap n = 97 (2 solutions)
+    7^4 - 48^2 = 2401 - 2304 = 97
+    77^2 - 18^3 = 5929 - 5832 = 97
+
+Gap n = 98 (0 solutions)
+    None within the stated bound.
+
+Gap n = 99 (1 solution)
+    50^2 - 7^4 = 2500 - 2401 = 99
+
+Gap n = 100 (4 solutions)
+    5^5 - 55^2 = 3125 - 3025 = 100
+    90^2 - 20^3 = 8100 - 8000 = 100
+    118^2 - 24^3 = 13924 - 13824 = 100
+    34^3 - 198^2 = 39304 - 39204 = 100
+
+5. Remarks
+
+The zero counts mean only that the exhaustive enumeration found no adjacent
+pair for that gap with upper value at most 10^9. No conclusion is drawn about
+solutions beyond 10^9. The gap sizes are restricted to 1 through 100; larger
+differences are outside the scope of this census.
+
+6. Additional restrictions reported for the 27 zero-count gaps
+
+The missing gaps in this census are
+
+    6, 14, 22, 29, 31, 34, 42, 44, 46, 50, 52, 54, 58, 62,
+    64, 66, 70, 72, 78, 82, 84, 86, 88, 90, 91, 96, 98.
+
+The restrictions below are stronger than the finite bound 10^9: they concern
+specified forms of a hypothetical solution, not just the pairs found by
+enumeration.
+
+6.1 Excluding square and cube endpoint families
+
+The reported restrictions are:
+
+  (i) None of the 27 gaps is realized by two consecutive perfect powers
+      that are both squares. For even gaps this follows because the
+      difference of two squares is odd. For the odd missing gaps 29, 31,
+      and 91, the reported analysis says every candidate square interval
+      contains another perfect power.
+
+ (ii) None is realized by consecutive perfect powers that are a square and
+      a cube. The associated equations are
+
+          Y^2 = X^3 + n    or    Y^2 = X^3 - n.
+
+      The supplied summary reports that the integral-point cases have been
+      classified using complete integral-point results, and that any
+      positive solutions do not give consecutive perfect powers.
+
+(iii) The only missing gaps reported as expressible as a difference of two
+      positive cubes are 91 and 98; both such pairs have an intervening
+      perfect power. Thus none of the 27 gaps is realized by consecutive
+      powers that are both cubes.
+
+The classification statements in (ii) are reported results, not
+re-established by the enumeration in this document. The source information
+provided for them ("Cambridge University Press+2") is not a complete
+bibliographic citation; a publication title, authors, and precise theorem
+or data reference should be supplied before treating this document as a
+fully sourced account of those classifications.
+
+6.2 Consequence for exponents
+
+If a hypothetical solution for one of these gaps had both exponents with
+only 2 and 3 as prime divisors, each endpoint would be a square or a cube.
+The exclusions above would rule out every such pairing. Accordingly, under
+the reported exclusions, at least one of the exponents b,d must have a
+prime divisor p >= 5. Equivalently, at least one endpoint has a
+p-th-power representation for some prime p >= 5.
+
+This leaves families such as
+
+    x^2 - y^5 = +/- n
+    x^3 - y^5 = +/- n
+    x^2 - y^7 = +/- n
+
+and, more generally, differences of powers with at least one exponent
+having a prime divisor at least 5. Equations involving fifth powers can
+lead to genus-2 curves, for which determining all integral points is
+substantially harder than solving the corresponding Mordell equations.
+
+6.3 Prime divisibility and congruence restrictions
+
+If a prime p divides n exactly once, the reported valuation restriction is
+that p divides neither base a nor c. The table lists those excluded primes
+for each missing gap. The next column records the residue of n modulo 8.
+The final column gives the reported status of the two equations
+Y^2 = X^3 + n and Y^2 = X^3 - n. "Has points" includes integer points
+with zero or negative coordinates; it does not assert a positive
+square-cube representation.
+
+    n     n mod 8   excluded primes   Reported integral-point status
+     6       6         2, 3           Neither sign has points
+    14       6         2, 7           Neither sign has points
+    22       6         2, 11          Plus sign has points
+    29       5         29             Neither sign has points
+    31       7         31             Plus sign has points
+    34       2         2, 17          Neither sign has points
+    42       2         2, 3, 7        Neither sign has points
+    44       4         11             Both signs have points
+    46       6         2, 23          Neither sign has points
+    50       2         2              Plus sign has points
+    52       4         13             Plus sign has points
+    54       6         2              Both signs have points
+    58       2         2, 29          Neither sign has points
+    62       6         2, 31          Neither sign has points
+    64       0         None            Both signs have points
+    66       2         2, 3, 11        Neither sign has points
+    70       6         2, 5, 7        Neither sign has points
+    72       0         None            Both signs have points
+    78       6         2, 3, 13        Neither sign has points
+    82       2         2, 41          Plus sign has points
+    84       4         3, 7           Neither sign has points
+    86       6         2, 43          Neither sign has points
+    88       0         11             Neither sign has points
+    90       2         2, 5           Neither sign has points
+    91       3         7, 13          Plus sign has points
+    96       0         3              Neither sign has points
+    98       2         2              Plus sign has points
+
+For all 17 missing gaps congruent to 2 modulo 4, the reported parity
+restriction is that both bases are odd and the exponents are not both even.
+For gaps congruent to 4 modulo 8, an even-even representation must involve
+at least one square.
+
+6.4 Status of the restrictions
+
+The reported work excludes square-square, square-cube, and cube-cube
+realizations for all 27 missing gap sizes. It does not prove any of the 27
+gaps impossible. In particular, the statement that a prime divisor at
+least 5 must occur in one exponent is conditional on the reported family
+exclusions above; it is not a conclusion of the 10^9 enumeration alone.
+The Mordell-equation summary reports that neither sign has integral points
+for 16 gaps, one sign has points for 7 gaps, and both signs have points for
+4 gaps. These equation-level point counts do not, by themselves, determine
+whether a consecutive-perfect-power solution exists.

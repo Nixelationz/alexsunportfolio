@@ -1,0 +1,7 @@
+Smallest positive difference between distinct perfect powers in each decade interval
+
+[1,000,000,000 to 10,000,000,000) -> smallest difference = 60 from 2535525316 and 2535525376
+[10,000,000,000 to 100,000,000,000) -> smallest difference = 100 from 18821096000 and 18821096100
+[100,000,000,000 to 1,000,000,000,000) -> smallest difference = 17 from 143384152904 and 143384152921
+[1,000,000,000,000 to 10,000,000,000,000) -> smallest difference = 341 from 7615646045316 and 7615646045657
+[10,000,000,000,000 to 100,000,000,000,000) -> smallest difference = 427 from 27909116936037 and 27909116936464
